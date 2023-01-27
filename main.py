@@ -7,17 +7,17 @@ import time
 startTime = time.time()
 prevTime = time.time()
 speedRate = 1.3
-
+# At the beginning our screen is white so we set the index to 0
 playerIndex = 0
 objectIndex = 0
 distanceThreshold = 100.0
-
+# Create player and other avatars objects
 player = [Object('AvatarImages/dino.png'), Object('AvatarImages/dinoBlack.png')]
 objects = [
      [Object('AvatarImages/cactus1.png'), Object('AvatarImages/cactus2.png'), Object('AvatarImages/bird.png')],
      [Object('AvatarImages/cactus1Black.png'), Object('AvatarImages/cactus2Black.png'), Object('AvatarImages/birdBlack.png')],
 ]
-
+# while loop to grab screen using multiplied dino height and width and convert it to get greyscale
 while True:
     img = grabScreen()
     img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -31,7 +31,7 @@ while True:
         break
 
 pag.press('space')
-
+# starting game
 while True:
     img_o = grabScreen(bbox=(*screenStart, *screenEnd))
     img = cv2.cvtColor(img_o, cv2.COLOR_BGR2GRAY)
