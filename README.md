@@ -11,7 +11,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Description will be added soon...
+In this program, we made a bot that can play Google Chrome's dinosaur game automatically using Open CV. It matches and locates the objects on the screen with the objects (avatars) images as reference.
  
 [Testing Video](https://www.youtube.com/watch?v=n7ghQS0LdeM)
 
